@@ -1,0 +1,43 @@
+{
+  "name": "renpy-api-node-coffee",
+  "version": "1.0.0",
+  "description": "Node.JS REST API from RenPy VN engine",
+  "main": "bin/bin.js",
+  "bin": {
+    "renpy-api-node-coffee": "bin.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "coffee-script": "^1.11.1",
+    "cookie": "^0.3.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.11.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FomaLSSJ/renpy-api-node-coffee.git"
+  },
+  "keywords": [
+    "renpy",
+    "node",
+    "nodejs",
+    "js",
+    "api",
+    "coffee",
+    "coffeescript",
+    "script"
+  ],
+  "author": "FomaLSSJ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FomaLSSJ/renpy-api-node-coffee/issues"
+  },
+  "homepage": "https://github.com/FomaLSSJ/renpy-api-node-coffee#readme"
+}

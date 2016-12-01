@@ -1,8 +1,8 @@
-config = require '../modules/config'
 cookie = require 'cookie'
 cookieParser = require 'cookie-parser'
-
 app = require '../app'
+
+config = require '../modules/config'
 
 http = require 'http'
   .createServer app

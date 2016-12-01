@@ -1,9 +1,11 @@
-config = require './modules/config'
 path = require 'path'
 express = require 'express'
 session = require 'express-session'
 bodyParser = require 'body-parser'
 cookieParser = require 'cookie-parser'
+
+config = require './modules/config'
+user = require './modules/user'
 
 app = express()
 
@@ -16,5 +18,7 @@ app.use session
   resave: config.SESSION.resave
   saveUninitialized: config.SESSION.saveUninitialized
   cookie: config.SESSION.config
+
+app.use '/user', user.routes
 
 module.exports = app
