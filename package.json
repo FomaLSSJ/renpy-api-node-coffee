@@ -14,11 +14,8 @@
     "express": "^4.14.0",
     "express-session": "^1.14.2"
   },
-  "devDependencies": {
-    "coffee-script": "^1.11.1"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha --require coffee-script --compilers coffee:coffee-script/register --recursive ./tests"
   },
   "repository": {
     "type": "git",
