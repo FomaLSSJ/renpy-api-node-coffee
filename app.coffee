@@ -5,12 +5,13 @@ bodyParser = require 'body-parser'
 cookieParser = require 'cookie-parser'
 
 config = require './modules/config'
-user = require './modules/user'
+router = require './modules/router'
 
 app = express()
 
+app.use bodyParser.json()
 app.use bodyParser.urlencoded
-  extended: false
+  extended: true
 app.use cookieParser()
 app.use session
   secret: config.SESSION.secret
@@ -19,6 +20,6 @@ app.use session
   saveUninitialized: config.SESSION.saveUninitialized
   cookie: config.SESSION.config
 
-app.use '/user', user.routes
+app.use '/user', router.user
 
 module.exports = app
